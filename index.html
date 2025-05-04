@@ -1,15 +1,226 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script type="module" crossorigin src="/assets/index-Bkil5BFY.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DZZxP7ig.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRƯỜNG THPT MẠC ĐĨNH CHI</title>
+  <meta name="description" content="Trang chủ Trường THPT Mạc Đĩnh Chi - Số 41 Tân Hòa Đông, P14, Q6, TPHCM, nơi cập nhật thông báo và thông tin giáo dục mới nhất.">
+  <meta name="theme-color" content="#cb312c">
+  <meta property="og:title" content="Trường THPT Mạc Đĩnh Chi">
+  <meta property="og:description" content="Cổng thông tin Trường THPT Mạc Đĩnh Chi Quận 6, TP.HCM.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://ext.same-assets.com/3060174560/681068853.png">
+  <meta property="og:url" content="https://thptmacdinhchi.hcm.edu.vn/">
+  <link rel="icon" type="image/png" href="https://ext.same-assets.com/3060174560/681068853.png" />
+  <!-- Font Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    html, body { font-family: 'Roboto', Arial, sans-serif; background: #f9f9f8; margin:0; padding:0; }
+    body { min-height: 100vh; }
+    .wrapper { max-width:1280px; margin:0 auto; box-sizing: border-box; }
+    header { background: #cb312c; color: #fff; padding: 0; }
+    .header-inner { display:flex; align-items:center; gap:16px; max-width:1280px; margin:0 auto; padding:10px 16px; }
+    .logo { background:#fff; border-radius:10px; border:2px solid #fff; width:64px; height:64px; object-fit:contain; }
+    .header-content { flex:1 1 0; }
+    .header-title-1 { font-weight: 800; font-size: 20px; letter-spacing:1px; }
+    .header-title-2 { color: #1f3145; font-weight:900; font-size:28px; text-transform:uppercase; letter-spacing:1px; }
+    nav.nav-main { display:flex; gap:18px; }
+    nav.nav-main a { color:#fff; font-weight:600; text-decoration:none; transition: color .15s; }
+    nav.nav-main a:hover { color:#ffde7e; }
+
+    /* Slider/banner */
+    .banner-box { background:linear-gradient(#fbfbfa, #f0f0ee 60%, #f9ece3 100%); min-height:120px; display:flex; justify-content:center; align-items:center; border-bottom:1.5px solid #eee; }
+    .banner-img { border-radius:8px; margin-top:16px; margin-bottom:10px; max-width:90%; height:176px; object-fit:cover; box-shadow:0 4px 24px #0001; }
+
+    /* Main layout */
+    main { padding:18px 0 0 0; max-width:1280px; margin:0 auto; display:grid; grid-template-columns:1.2fr 2.2fr 1.1fr; gap:18px; }
+    .main-col { display:flex; flex-direction:column; gap:16px; }
+    .main-box, .main-box-grid { background:#fff; border-radius:8px; box-shadow:0 1px 6px #0001; padding:12px; }
+    .main-box-grid { box-shadow:0 1px 6px #0002; padding:11px; min-height:115px; }
+    .main-box strong, .main-box-grid strong, .main-section-title { color:#cb312c; }
+    ul, ol { margin:0; padding-left:20px; }
+    li { font-size:15px; margin-bottom:3px; }
+    .main-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+
+    /* Sidebar */
+    aside.sidebar { display:flex; flex-direction:column; gap:16px; }
+    .sidebar-btnbox button {
+      width:100%; background:#f9f9f9; border:1.2px solid #e4cba2; color:#cb312c; font-weight:600; border-radius:7px; padding:5px 0; cursor:pointer; font-size:15px; transition:background .2s;
+      margin-bottom: 6px; outline: none;
+    }
+    .sidebar-btnbox button:hover { background:#e4cba2; }
+    .qr-img { margin-top: 6px; display:block; margin-left:auto; margin-right:auto; }
+    .video-box iframe { border-radius:8px; width:100%; height:120px; border:none; margin-top:6px; background:#222 }
+    /* Footer */
+    footer { background:#cb312c; color:#fff; padding:16px 0 14px 0; margin-top:50px; }
+    .footer-inner { display:flex; align-items:center; gap:14px; max-width:1280px; margin:0 auto; }
+    .footer-logo { background:#fff; border-radius:8px; width:50px; height:50px; }
+    .footer-info { flex:1; }
+    .footer-hotline { background:#fff; color:#cb312c; border-radius:24px; padding:6px 22px; font-weight:700; font-size:16px; box-shadow:0 1px 6px #0002; border:2px solid #cb312c;text-decoration:none; }
+    .footer-hotline:hover { background:#ffefcf; color:#cb312c; }
+
+    @media (max-width:960px){
+      main { grid-template-columns:1fr; }
+      .header-inner, .footer-inner { flex-direction:column; align-items:stretch; gap:7px; }
+      .main-grid { grid-template-columns:1fr; }
+    }
+  </style>
 </head>
-
 <body>
-  <div id="root"></div>
+  <header>
+    <div class="header-inner">
+      <img src="https://ext.same-assets.com/3060174560/681068853.png" alt="Logo" class="logo">
+      <div class="header-content">
+        <div class="header-title-1">NGÀNH GIÁO DỤC VÀ ĐÀO TẠO THÀNH PHỐ HỒ CHÍ MINH</div>
+        <div class="header-title-2">TRƯỜNG THPT MẠC ĐĨNH CHI</div>
+      </div>
+      <nav class="nav-main">
+        <a href="#">GIỚI THIỆU</a>
+        <a href="#">THÔNG BÁO</a>
+        <a href="#">CÔNG KHAI</a>
+        <a href="#">KẾ HOẠCH</a>
+        <a href="#">ĐOÀN THỂ</a>
+        <a href="#">GIÁO DỤC</a>
+      </nav>
+    </div>
+  </header>
+  <div class="banner-box"><img src="https://ext.same-assets.com/3060174560/1790433369.jpeg" alt="Banner" class="banner-img"></div>
+  <main>
+    <!-- Cột trái -->
+    <div class="main-col">
+      <div class="main-box">
+        <strong>THÔNG BÁO</strong>
+        <ul>
+          <li><span style="font-weight:600">Thông báo tuyển sinh đi học tại Của-ba năm 2024</span> <span style="font-size:13px;color:#888;">(15/8/2024)</span></li>
+          <li><span style="font-weight:600">Hướng dẫn đảm bảo an toàn thông tin, tham gia môi trường mạng an toàn đối với hoạt động giảng dạy, quản lý giáo dục</span> <span style="font-size:13px;color:#888;">(1/3/2024)</span></li>
+          <li><span style="font-weight:600">Thông báo nhận bằng tốt nghiệp THPT - Năm học 2022-2023</span> <span style="font-size:13px;color:#888;">(23/2/2024)</span></li>
+          <li><span style="font-weight:600">Giới thiệu Học bổng Chính phủ New Zealand bậc Trung học</span> <span style="font-size:13px;color:#888;">(22/2/2024)</span></li>
+        </ul>
+      </div>
+      <div class="main-box">
+        <strong>THƯ MỜI</strong>
+        <ul>
+          <li><span style="font-weight:600">[Khẩn] Thư mời họp Cha mẹ học sinh Lớp 10 chuyên trường THPT Mạc Đĩnh Chi - Năm học 2023-2024</span> <span style="font-size:13px;color:#888;">(11/8/2021)</span></li>
+        </ul>
+      </div>
+      <div class="main-box">
+        <strong>LIÊN KẾT WEBSITE</strong>
+        <ul>
+          <li><a href="#" style="color:#2a4d9a; text-decoration:underline">Báo Giáo dục và Đào tạo</a></li>
+          <li><a href="#" style="color:#2a4d9a; text-decoration:underline">Tin Sở GD&ĐT</a></li>
+          <li><a href="#" style="color:#2a4d9a; text-decoration:underline">Văn bản Sở GD&ĐT</a></li>
+          <li><a href="#" style="color:#2a4d9a; text-decoration:underline">Nhắc việc</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Cột giữa -->
+    <div class="main-col">
+      <div class="main-box">
+        <strong>TIN NỔI BẬT</strong>
+        <ul>
+          <li><span style="font-weight:600">Lễ tuyên dương học sinh giỏi năm học 2024 - 2025</span> <span style="font-size:13px;color:#888;">(29/4/2025)</span></li>
+          <li><span style="font-weight:600">Thông tin tuyển sinh lớp 10 - Năm học: 2025 - 2026</span> <span style="font-size:13px;color:#888;">(28/4/2025)</span></li>
+          <li><span style="font-weight:600">Lịch công tác tuần từ 28/4/2025 đến 04/05/2025</span> <span style="font-size:13px;color:#888;">(27/4/2025)</span></li>
+        </ul>
+      </div>
+      <div class="main-box">
+        <strong>TIN TỨC - SỰ KIỆN</strong>
+        <div style="padding:12px 0; font-size:15px;">Đang cập nhật...</div>
+      </div>
+      <div class="main-grid">
+        <div class="main-box-grid">
+          <strong>KẾ HOẠCH</strong>
+          <ul>
+            <li>Lịch công tác tuần từ 28/04/2025 đến 04/05/2025</li>
+            <li>Lịch công tác tuần từ 21/04/2025 đến 27/04/2025</li>
+            <li>Lịch công tác tuần từ 13/04/2025 đến 20/04/2025</li>
+          </ul>
+        </div>
+        <div class="main-box-grid">
+          <strong>ĐOÀN THỂ</strong>
+          <ul>
+            <li>Triển khai kế hoạch STEM-CEO và Tuyển truyền, giáo dục lý tưởng cho học sinh</li>
+            <li>Trường THPT Mạc Đĩnh Chi tổ chức các hoạt động tháng thanh niên</li>
+          </ul>
+        </div>
+        <div class="main-box-grid">
+          <strong>GIÁO DỤC - STEM</strong>
+          <ul>
+            <li>Kết quả English Eloquence Contest - Cuộc thi Hùng Biện Tiếng Anh 2023</li>
+            <li>Học sinh đạt giải tại các cuộc thi cấp thành phố</li>
+          </ul>
+        </div>
+        <div class="main-box-grid">
+          <strong>KHOA HỌC KỸ THUẬT</strong>
+          <ul>
+            <li>Kết quả cuộc thi Khoa Học Kỹ Thuật học sinh THPT năm học 2022 - 2023</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar phải -->
+    <aside class="sidebar">
+      <div class="main-box">
+        <strong>TIN MỚI NHẤT</strong>
+        <ul>
+          <li>Lễ tuyên dương học sinh giỏi năm học 2024 - 2025</li>
+          <li>Thông tin tuyển sinh lớp 10 - Năm học 2025 - 2026</li>
+          <li>Chung kết Rubik trường THPT Mạc Đĩnh Chi</li>
+          <li>Lịch công tác tuần từ 28/4/2025 đến 04/05/2025</li>
+          <li>Công bố công khai thực hiện dự toán thu chi ngân sách quý 1/2025</li>
+        </ul>
+      </div>
+      <div class="main-box">
+        <strong>ĐỌC NHIỀU NHẤT</strong>
+        <ol>
+          <li>Thông tin tuyển sinh lớp 10 - Năm học 2025 - 2026</li>
+          <li>Chung kết Rubik trường THPT Mạc Đĩnh Chi</li>
+          <li>Kết quả HSG lớp 12 trường THPT Mạc Đĩnh Chi</li>
+          <li>Kết quả thi khoa học kỹ thuật và giải toán trên máy tính cầm tay...</li>
+          <li>Kết quả thi HSG lớp 12 trường THPT Mạc Đĩnh Chi</li>
+        </ol>
+      </div>
+      <div class="main-box">
+        <strong>PHẦN MỀM TÁC NGHIỆP</strong>
+        <div class="sidebar-btnbox">
+          <button>Cổng dữ liệu ngành GD&ĐT</button>
+          <button>Sổ điểm điện tử</button>
+          <button>Lịch công tác tuần</button>
+          <button>Thông tin lịch thi tuyển sinh</button>
+          <button>Hệ thống khảo thí</button>
+          <button>Quản lý nhân sự</button>
+        </div>
+      </div>
+      <div class="main-box video-box">
+        <strong><span role="img" aria-label="play">▶️</span> VIDEO GIỚI THIỆU</strong>
+        <iframe src="https://www.youtube.com/embed/47JWS-cqzDc" title="Trường THPT Mạc Đĩnh Chi - Tuyển dụng HSG các năm" allowfullscreen></iframe>
+      </div>
+      <div class="main-box" style="text-align:center;">
+        <strong>MÃ QR CODE TRUY CẬP WEB</strong>
+        <img class="qr-img" src="https://ext.same-assets.com/3060174560/2072461534.svg" alt="QR code" width="90" height="90" />
+      </div>
+      <div class="main-box" style="font-size:15px;">
+        <strong>THỐNG KÊ TRUY CẬP</strong>
+        <div>Đang online: <b>9</b></div>
+        <div>Hôm nay: <b>27</b></div>
+        <div>Hôm qua: <b>25</b></div>
+        <div>Tuần này: <b>1,528</b></div>
+        <div>Tháng này: <b>1,966</b></div>
+        <div>Tổng lượt: <b>7,296</b></div>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <div class="footer-inner">
+      <img class="footer-logo" src="https://ext.same-assets.com/3060174560/681068853.png" alt="Logo trường">
+      <div class="footer-info">
+        <div style="font-weight:600">CỔNG THÔNG TIN ĐIỆN TỬ TRƯỜNG THPT MẠC ĐĨNH CHI</div>
+        <div style="font-size:13px">Địa chỉ: Số 41 Tân Hòa Đông, P14, Q6, TPHCM | SĐT: (028) 3 6756951 | Email: c3macdinhchi.tphcm@moet.edu.vn</div>
+        <div style="font-size:12px; margin-top:2px">&copy; Bản quyền thuộc Trường THPT Mạc Đĩnh Chi</div>
+      </div>
+      <a href="tel:02836756951" class="footer-hotline">(028) 36756951</a>
+    </div>
+  </footer>
 </body>
-
 </html>
